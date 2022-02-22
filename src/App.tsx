@@ -1,4 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
+import { fromEvent } from 'rxjs'
 import {DanmakuType, DanmakuTypeEnum} from './types'
 import "./style/index.less"
 
@@ -8,9 +9,8 @@ export default () => {
   const ref = useRef(comments)
 
   useEffect(() => {
-    window.addEventListener("message", (e) => {
-      console.log(e)
-      const { data } = e
+    fromEvent(window, 'message').subscribe((e: any) => {
+      const { data } = e;
 
       try{
         const danmaku = JSON.parse(data)
@@ -21,9 +21,8 @@ export default () => {
 
         console.log(danmaku)
 
-
       }catch (e) {
-        console.error(e)
+        console.log('不是弹幕')
       }
 
     })
@@ -43,7 +42,6 @@ export default () => {
           }
         }))
       }
-      哈哈
     </div>
   )
 }
