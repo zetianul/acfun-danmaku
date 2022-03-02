@@ -36,4 +36,6 @@ export type CommentDanmaku = {
   }
 }
 
+
+
 export type DanmakuType = CommentDanmaku

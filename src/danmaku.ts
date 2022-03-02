@@ -1,4 +1,4 @@
-let danmaku = [
+export const danmaku = [
   {
     "liverUID": 23682490,
     "type": 1000, // 评论
