@@ -1,26 +1,26 @@
-import React, {useEffect, useRef, useState} from 'react';
-import {DanmakuType, DanmakuTypeEnum} from "../../types";
-import {fromEvent} from "rxjs";
+import React, {useEffect } from 'react';
+import { isMessage} from "@types";
+import { fromEvent} from "rxjs";
+import {subjects} from "@reactive";
+import Comment from "./Comment";
+import './index.less'
 
 const Danmaku = () => {
-
-  const [comments, setComments] = useState<DanmakuType[]>([])
-  const ref = useRef(comments)
 
   useEffect(() => {
     fromEvent(window, 'message').subscribe((e: any) => {
       const { data } = e;
 
       // console.log(data)
+      console.log('data', data)
 
       try{
-        const danmaku = JSON.parse(data)
 
-        ref.current = [...ref.current, danmaku]
+        const danmaku: unknown = JSON.parse(data)
 
-        setComments(ref.current)
-
-        // console.log(danmaku)
+        if(isMessage(danmaku)){
+          subjects.comment.next(danmaku)
+        }
 
       }catch (e) {
         // console.log('不是弹幕')
@@ -31,18 +31,8 @@ const Danmaku = () => {
 
 
   return (
-    <div>
-      {
-        comments.map((i => {
-          if(i.type === DanmakuTypeEnum.评论){
-            return (
-              <div>
-                {`${i.data.danmuInfo.userInfo.nickname} ${i.data.content}`}
-              </div>
-            )
-          }
-        }))
-      }
+    <div id="paint">
+      <Comment/>
     </div>
   )
 }

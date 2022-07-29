@@ -1,0 +1,77 @@
+@shake-range: 6px;
+
+@keyframes shake {
+  0%{
+    transform: translate3d(0, @shake-range, 0);
+  }
+  25%{
+    transform: translate3d(@shake-range, 0, 0);
+  }
+  50%{
+    transform: translate3d(0, -@shake-range, 0);
+  }
+  75%{
+    transform: translate3d(-@shake-range, 0, 0);
+  }
+  100%{
+    transform: translate3d(0, @shake-range, 0);
+  }
+}
+
+.container{
+  position: absolute;
+  transform: rotateY(24deg);
+}
+.danmaku-comment{
+  //position: absolute;
+  padding: 12px 12px;
+  position: relative;
+  //box-shadow: 8px 8px #eeeeee;
+  border: 2px solid #cccccc;
+  border-radius: 4px;
+  //transition: linear 1s;
+  min-width: 160px;
+  max-width: 260px;
+
+  //color: white;
+  text-shadow: 1px 1px #eeeeee;
+  //
+  animation: shake infinite ease-in-out 4s;
+  // variables
+  @avatar-size: 24px;
+
+  .content{
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+  .avatar{
+    position: absolute;
+    top: calc(-0.5 * @avatar-size);
+    left: calc(-0.5 * @avatar-size);
+    width: @avatar-size;
+    height: @avatar-size;
+    overflow: hidden;
+    border-radius: 100%;
+    box-shadow: 0 0 4px 4px white;
+    img{
+      width: @avatar-size;
+      height: @avatar-size;
+    }
+  }
+  .name{
+    position: absolute;
+    background: white;
+    border-radius: 2px;
+    padding: 0 4px;
+    top: calc(-0.5 * @avatar-size);
+    left:calc(0.5 * @avatar-size + 12px);
+  }
+  .medal{
+    padding: 0 4px;
+    position: absolute;
+    background: white;
+    border-radius: 4px;
+    top:calc(-0.5 * @avatar-size);
+    right:calc(0.5 * @avatar-size) ;
+  }
+}

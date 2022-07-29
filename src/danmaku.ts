@@ -22,6 +22,29 @@ export const danmaku = [
     }
   },
   {
+    "liverUID": 275989,
+    "type": 1000,
+    "data": {
+      "danmuInfo": {
+        "sendTime": 1646410647416,
+        "userInfo": {
+          "userID": 209976,
+          "nickname": "杨提督",
+          "avatar": "https://imgs.aixifan.com/newUpload/209976_fb2a5dfe9b434069aad27b102e74d18b.png",
+          "medal": {
+            "uperID": 36626547,
+            "userID": 209976,
+            "clubName": "爱蒂生",
+            "level": 5
+          },
+          "managerType": 0
+        }
+      },
+      "content": "测试"
+    }
+  },
+
+  {
     "liverUID": 23682490,
     "type": 1001, //点赞
     "data": {
@@ -139,6 +162,118 @@ export const danmaku = [
       "combo": 1,
       "value": 5,
       "comboID": "1_1_1618750319424",
+      "slotDisplayDuration": 3000,
+      "ExpireDuration": 300000,
+      "drawGiftInfo": {
+        "screenWidth": 0,
+        "screenHeight": 0,
+        "drawPoint": null
+      }
+    }
+  },
+  {
+    "liverUID": 275989,
+    "type": 1005,
+    "data": {
+      "danmuInfo": {
+        "sendTime": 1646411652358,
+        "userInfo": {
+          "userID": 209976,
+          "nickname": "杨提督",
+          "avatar": "https://imgs.aixifan.com/newUpload/209976_fb2a5dfe9b434069aad27b102e74d18b.png",
+          "medal": {
+            "uperID": 36626547,
+            "userID": 209976,
+            "clubName": "爱蒂生",
+            "level": 5
+          },
+          "managerType": 0
+        }
+      },
+      "giftDetail": {
+        "giftID": 17,
+        "giftName": "快乐水",
+        "arLiveName": "",
+        "payWalletType": 1,
+        "price": 1,
+        "webpPic": "https://ali2.a.kwimgs.com/bs2/giftCenter/giftCenter-20200326112424sejuRxJc.webp",
+        "pngPic": "https://ali2.a.kwimgs.com/bs2/giftCenter/giftCenter-20200812140941rMziAHwK.png",
+        "smallPngPic": "https://ali2.a.kwimgs.com/bs2/giftCenter/giftCenter-20200319210318GwMNEDGy.png",
+        "allowBatchSendSizeList": [
+          1,
+          6,
+          10,
+          66,
+          233
+        ],
+        "canCombo": true,
+        "canDraw": false,
+        "magicFaceID": 0,
+        "vupArID": 1,
+        "description": "快乐肥宅喝肥宅快乐水，快乐无比",
+        "redpackPrice": 0,
+        "cornerMarkerText": ""
+      },
+      "count": 1,
+      "combo": 1,
+      "value": 1000,
+      "comboID": "17_17_1646411651390",
+      "slotDisplayDuration": 3000,
+      "ExpireDuration": 300000,
+      "drawGiftInfo": {
+        "screenWidth": 0,
+        "screenHeight": 0,
+        "drawPoint": null
+      }
+    }
+  },
+  {
+    "liverUID": 275989,
+    "type": 1005,
+    "data": {
+      "danmuInfo": {
+        "sendTime": 1646411675040,
+        "userInfo": {
+          "userID": 209976,
+          "nickname": "杨提督",
+          "avatar": "https://imgs.aixifan.com/newUpload/209976_fb2a5dfe9b434069aad27b102e74d18b.png",
+          "medal": {
+            "uperID": 36626547,
+            "userID": 209976,
+            "clubName": "爱蒂生",
+            "level": 5
+          },
+          "managerType": 0
+        }
+      },
+      "giftDetail": {
+        "giftID": 35,
+        "giftName": "氧气瓶",
+        "arLiveName": "",
+        "payWalletType": 1,
+        "price": 6,
+        "webpPic": "https://ali2.a.kwimgs.com/bs2/giftCenter/giftCenter-20200710193755EsBTkrZa.webp",
+        "pngPic": "https://ali2.a.kwimgs.com/bs2/giftCenter/giftCenter-20200812140602bpagADgP.png",
+        "smallPngPic": "https://ali2.a.kwimgs.com/bs2/giftCenter/giftCenter-20200710193802wglqFlFq.png",
+        "allowBatchSendSizeList": [
+          1,
+          6,
+          10,
+          66,
+          233
+        ],
+        "canCombo": true,
+        "canDraw": false,
+        "magicFaceID": 0,
+        "vupArID": 0,
+        "description": "不要急，氧气瓶来了～",
+        "redpackPrice": 0,
+        "cornerMarkerText": ""
+      },
+      "count": 1,
+      "combo": 1,
+      "value": 6000,
+      "comboID": "35_35_1646411674058",
       "slotDisplayDuration": 3000,
       "ExpireDuration": 300000,
       "drawGiftInfo": {

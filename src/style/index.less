@@ -1,13 +1,18 @@
 html, body{
   position: relative;
-  background: transparent;
-  overflow: hidden;
-  height: 100vh;
-  width: 100vw;
+  //background: transparent;
+  //overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background: url("../assets/lottie_background.png") no-repeat top;
 }
 
 #root{
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
+  //overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
 }
